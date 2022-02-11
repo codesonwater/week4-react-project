@@ -1,22 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+
+ 
 
 function App() {
+  const [login, setLogin] = useState(false);
+
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div>
+        <h1> Hello! {login} </h1>
+        {'\n'}
+        {!login
+        ?
+        <button className="button1" onClick={() => setLogin(true)}>
+          LOGIN
+        </button>
+        :
+        <button className="button2" onClick={() => setLogin(false)}>
+          LOG OUT
+        </button>
+        }
+        </div>
       </header>
     </div>
   );
