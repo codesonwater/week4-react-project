@@ -4,7 +4,7 @@ import "./App.css";
  
 
 function App() {
-  const [login, setLogin] = useState(false);
+  const [login, setLogin] = useState();
 
 
   return (
@@ -13,16 +13,13 @@ function App() {
         <div>
         <h1> Hello! {login} </h1>
         {'\n'}
-        {!login
-        ?
-        <button className="button1" onClick={() => setLogin(true)}>
+        <button className="button1" onClick={() => setLogin('Welcome Back')}>
           LOGIN
         </button>
-        :
-        <button className="button2" onClick={() => setLogin(false)}>
+        &nbsp;
+        <button className="button2" onClick={() => setLogin('Please Login')}>
           LOG OUT
         </button>
-        }
         </div>
       </header>
     </div>
