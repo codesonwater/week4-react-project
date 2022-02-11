@@ -14,21 +14,20 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  background-image: linear-gradient(#282c34, #a5a5a5);
+  background-image: linear-gradient(#282c34, #000000);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(148, 148, 148);
 }
 .button1{
   background-color: lemonchiffon;
   font-size: 28px;
   border: none;
-  padding: 2% 6% 2% 6% ;
+  padding: 20px 60px 20px 60px;
   text-transform: uppercase;
   color: #333333;
   border-radius: 30px;
@@ -38,7 +37,7 @@
   background-color: transparent;
   font-size: 28px;
   border: 1px solid  lemonchiffon;
-  padding: 2% 6% 2% 6% ;
+  padding: 20px 60px 20px 60px;
   text-transform: uppercase;
   color: lemonchiffon;
   border-radius: 30px;
